@@ -21,7 +21,7 @@ jobs:
           SHEET_SERVICE_ACCOUNT: ${{secrets.SEC_ECHO}}
       - name: copy files (Teli)
         shell: bash
-        working-directory: ${{github.workspace}}/builds
+        working-directory: ${{github.workspace}}/
         run: echo $SHEET_SERVICE_ACCOUNT
       - name: Restore dependencies
         run: dotnet restore
